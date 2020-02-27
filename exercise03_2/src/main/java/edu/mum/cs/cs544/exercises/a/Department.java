@@ -1,20 +1,20 @@
 package edu.mum.cs.cs544.exercises.a;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 public class Department {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     @OneToMany(mappedBy = "department")
     List<Employee> employeeList;
+
+    public Department() {
+    }
 
     public Department(String name) {
         this.name = name;
@@ -33,7 +33,7 @@ public class Department {
         return employeeList;
     }
 
-    public void setEmployeeList(List<Employee> employeeList) {
-        this.employeeList = employeeList;
+    public void addEmployee(Employee e) {
+      employeeList.add(e);
     }
 }
