@@ -30,11 +30,15 @@ public class App {
             session = sessionFactory.openSession();
             tx = session.beginTransaction();
 
-            //create new instance of department
-            Department d1 = new Department("Computer Science");
+            //create new instances of Laptops
+            Laptop l1 = new Laptop("HP", "Envy");
+            Laptop l2 = new Laptop("Dell", "Convertible");
+            Laptop l3 = new Laptop("HP", "Spectra");
 
             //create new instance of employee
-            Employee emp1 = new Employee(001, "Gembes", d1);
+            Employee emp1 = new Employee("Andrew", "Gembes", l1);
+            emp1.addLaptop(l2);
+            emp1.addLaptop(l3);
             session.persist(emp1);
 
             tx.commit();

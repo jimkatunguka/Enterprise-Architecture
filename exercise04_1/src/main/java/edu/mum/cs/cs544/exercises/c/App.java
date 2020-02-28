@@ -1,5 +1,7 @@
-package edu.mum.cs.cs544.exercises.a;
+package edu.mum.cs.cs544.exercises.c;
 
+import edu.mum.cs.cs544.exercises.b.Flight;
+import edu.mum.cs.cs544.exercises.b.Passenger;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -7,6 +9,10 @@ import org.hibernate.Transaction;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.util.Locale;
 
 public class App {
     private static final SessionFactory sessionFactory;
@@ -30,12 +36,24 @@ public class App {
             session = sessionFactory.openSession();
             tx = session.beginTransaction();
 
-            //create new instance of department
-            Department d1 = new Department("Computer Science");
+            //create new instances of Student
+            Student s1 = new Student(30, "Thomas", "Andrew" );
+            Student s2 = new Student(50, "Keith", "Jenkins" );
+            Student s3 = new Student(90, "Adele", "Adeola" );
 
-            //create new instance of employee
-            Employee emp1 = new Employee(001, "Gembes", d1);
-            session.persist(emp1);
+
+            //create a new instance of School
+            School sc1 = new School("MIU", s1);
+            School sc2 = new School("MUM", s3);
+
+            //add students to the map in school.
+            sc1.addStudent(s1);
+            sc1.addStudent(s2);
+            sc1.addStudent(s3);
+
+            //save the school
+            session.persist(sc1);
+            session.persist(sc2);
 
             tx.commit();
 

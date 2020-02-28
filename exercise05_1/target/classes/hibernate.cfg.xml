@@ -22,13 +22,19 @@
 		<property name="hbm2ddl.auto">create</property>
 
 		<!-- Mapping files -->
-		<mapping class="edu.mum.cs.cs544.exercises.a.Employee" />
-		<mapping class="edu.mum.cs.cs544.exercises.a.Department" />
+<!--		<mapping class="edu.mum.cs.cs544.exercises.a.Customer" />-->
+<!--		<mapping class="edu.mum.cs.cs544.exercises.a.Order" />-->
+<!--		<mapping class="edu.mum.cs.cs544.exercises.a.OrderLine" />-->
+<!--		<mapping class="edu.mum.cs.cs544.exercises.a.Product" />-->
+
+		<mapping class="edu.mum.cs.cs544.exercises.b.Customer" />
+		<mapping class="edu.mum.cs.cs544.exercises.b.Order" />
+		<mapping class="edu.mum.cs.cs544.exercises.b.OrderLine" />
+		<mapping class="edu.mum.cs.cs544.exercises.b.Product" />
+		<mapping class="edu.mum.cs.cs544.exercises.b.CD" />
+		<mapping class="edu.mum.cs.cs544.exercises.b.DVD" />
 		<mapping class="edu.mum.cs.cs544.exercises.b.Book" />
-		<mapping class="edu.mum.cs.cs544.exercises.b.Publisher" />
-		<mapping class="edu.mum.cs.cs544.exercises.c.Student" />
-		<mapping class="edu.mum.cs.cs544.exercises.c.Course" />
-		<mapping class="edu.mum.cs.cs544.exercises.d.Customer" />
-		<mapping class="edu.mum.cs.cs544.exercises.d.Reservation" />
+
+
 	</session-factory>
 </hibernate-configuration>

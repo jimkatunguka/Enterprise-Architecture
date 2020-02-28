@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cb019a4e-7f2a-4805-9ea9-f59ad1c5f4c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/d/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/d/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/d/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/e/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/e/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/e/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/e/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/f/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/f/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/f/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/f/Office.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/exercise04_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/a/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/a/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/a/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/b/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/b/Flight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/b/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/c/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/c/School.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/edu/mum/cs/cs544/exercises/c/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/exercise05_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/src/main/java/edu/mum/cs/cs544/exercises/a/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/src/main/java/edu/mum/cs/cs544/exercises/a/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/src/main/java/edu/mum/cs/cs544/exercises/a/OrderLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/src/main/java/edu/mum/cs/cs544/exercises/a/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exercise05_1/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/a/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise03_2/src/main/java/edu/mum/cs/cs544/exercises/a/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise03_2/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise03_2/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise03_2/target/classes/edu/mum/cs/cs544/exercises/c/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../exercise03_2/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../exercise03_2/target/classes/hibernate.cfg.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YPEFKwPFWgItvHTNzR0RKOx4sF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="edu.mum.cs.cs544.exercises.c" />
+      <recent name="edu.mum.cs.cs544.exercises.b" />
+      <recent name="edu.mum.cs.cs544.exercises.a" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jimka\Downloads\cs544-master\cs544-master\exercises\Enterprise-Architecture\exercise04_1\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App (2)">
+    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.mum.cs.cs544.exercises.b.App" />
+      <module name="exercise04_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.mum.cs.cs544.exercises.b.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.mum.cs.cs544.exercises.c.App" />
+      <module name="exercise04_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.mum.cs.cs544.exercises.c.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="edu.mum.cs.cs544.exercises.a.App" />
+      <module name="exercise04_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="edu.mum.cs.cs544.exercises.a.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App (2)" />
+        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.App" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb019a4e-7f2a-4805-9ea9-f59ad1c5f4c6" name="Default Changelist" comment="" />
+      <created>1582835723846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582835723846</updated>
+      <workItem from="1582835739602" duration="17185000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="970" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1582848967297">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="970" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1582848967297" />
+    <state x="1014" y="322" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582836478272">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="1014" y="322" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.864@0.0.1536.864" timestamp="1582836478272" />
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1582851460126">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1582851460126" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1582851460125">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1582851460125" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1582851460125">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1582851460125" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1582851460126">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1582851460126" />
+    <state x="209" y="129" key="new project wizard" timestamp="1582855273529">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="209" y="129" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1582855273529" />
+  </component>
+</project>

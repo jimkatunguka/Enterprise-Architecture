@@ -23,12 +23,13 @@
 
 		<!-- Mapping files -->
 		<mapping class="edu.mum.cs.cs544.exercises.a.Employee" />
-		<mapping class="edu.mum.cs.cs544.exercises.a.Department" />
-		<mapping class="edu.mum.cs.cs544.exercises.b.Book" />
-		<mapping class="edu.mum.cs.cs544.exercises.b.Publisher" />
+		<mapping class="edu.mum.cs.cs544.exercises.a.Laptop" />
+
+		<mapping class="edu.mum.cs.cs544.exercises.b.Passenger" />
+		<mapping class="edu.mum.cs.cs544.exercises.b.Flight" />
+
+		<mapping class="edu.mum.cs.cs544.exercises.c.School" />
 		<mapping class="edu.mum.cs.cs544.exercises.c.Student" />
-		<mapping class="edu.mum.cs.cs544.exercises.c.Course" />
-		<mapping class="edu.mum.cs.cs544.exercises.d.Customer" />
-		<mapping class="edu.mum.cs.cs544.exercises.d.Reservation" />
+
 	</session-factory>
 </hibernate-configuration>
