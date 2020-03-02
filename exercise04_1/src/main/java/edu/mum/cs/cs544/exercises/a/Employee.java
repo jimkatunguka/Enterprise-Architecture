@@ -11,7 +11,7 @@ public class Employee {
     private int id;
     private String firstname;
     private String lastname;
-    @OneToMany(mappedBy = "employee", cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL)
     private Set<Laptop> laptops;
 
     public Employee() {
@@ -20,7 +20,7 @@ public class Employee {
     public Employee(String firstname, String lastname, Laptop laptop) {
         this.firstname = firstname;
         this.lastname = lastname;
-        laptops = new HashSet<>();
+        this.laptops = new HashSet<>();
         addLaptop(laptop);
     }
 
@@ -44,7 +44,6 @@ public class Employee {
         return laptops;
     }
 
-    public void addLaptop(Laptop laptop) {
-        laptops.add(laptop);
+    public void addLaptop(Laptop laptop) { laptops.add(laptop);
     }
 }

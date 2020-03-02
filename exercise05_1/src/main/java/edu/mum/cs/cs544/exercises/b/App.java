@@ -10,6 +10,7 @@ import org.hibernate.service.ServiceRegistry;
 
 import java.text.DateFormat;
 import java.text.ParseException;
+import java.util.List;
 import java.util.Locale;
 
 public class App {
@@ -64,6 +65,30 @@ public class App {
             tx.commit();
 
         }catch (HibernateException | ParseException e) {
+            if (tx != null) {
+                System.err.println("Rolling back: " + e.getMessage());
+                tx.rollback();
+            }
+        } finally {
+            if (session != null) {
+                session.close();
+            }
+        }
+
+        try {
+            session = sessionFactory.openSession();
+            tx = session.beginTransaction();
+
+            // retrieve all owners
+            @SuppressWarnings("unchecked")
+            List<edu.mum.cs.cs544.exercises.b.Product> productList = session.createQuery("from Product").list();
+            for (edu.mum.cs.cs544.exercises.b.Product p : productList) {
+                System.out.println("Product_Name= " + p.getName() + ", Description= "
+                        + p.getDescription());
+            }
+            tx.commit();
+
+        } catch (HibernateException e) {
             if (tx != null) {
                 System.err.println("Rolling back: " + e.getMessage());
                 tx.rollback();
