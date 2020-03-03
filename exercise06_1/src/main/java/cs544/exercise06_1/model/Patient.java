@@ -10,11 +10,11 @@ public class Patient {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    @Column(table = "Address")
+    @Column(table = "Address", name = "STREET")
     private String street;
-    @Column(table = "Address")
+    @Column(table = "Address", name = "ZIP")
     private String zip;
-    @Column(table = "Address")
+    @Column(table = "Address", name = "CITY")
     private String city;
 
 
