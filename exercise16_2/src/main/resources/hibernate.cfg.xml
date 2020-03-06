@@ -18,13 +18,13 @@
 		<property name="show_sql">true</property>
 		<property name="use_sql_comments">true</property>
 		<property name="hibernate.format_sql">false</property>
-		
+
 		<!-- Always drop and recreate the database schema on startup -->
 		<property name="hbm2ddl.auto">create</property>
 		
 		<!-- use thread local pattern -->
 		<property name="current_session_context_class">thread</property>
-		
+
 		<!-- Mapping files -->
 <!--		<mapping /> &lt;!&ndash; TODO map classes &ndash;&gt;-->
 		<mapping class="cs544.exercise16_2.Course" />
