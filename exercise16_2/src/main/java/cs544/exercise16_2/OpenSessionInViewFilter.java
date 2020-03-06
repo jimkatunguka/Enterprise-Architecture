@@ -37,9 +37,9 @@ public class OpenSessionInViewFilter implements Filter {
 			throw ex;
 		}
 		// pass the request along the filter chain
-		System.out.println("receiving request");
-		chain.doFilter(request, response);
-		System.out.println("sending response");
+//		System.out.println("receiving request");
+//		chain.doFilter(request, response);
+//		System.out.println("sending response");
 	}
 
 	public void destroy() {
