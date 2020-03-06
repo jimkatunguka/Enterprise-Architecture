@@ -1,7 +1,6 @@
 package cs544.exercise13_1;
 
 import org.aspectj.lang.ProceedingJoinPoint;
-import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.springframework.stereotype.Component;
@@ -19,7 +18,6 @@ public class TraceAdvice2 {
         long totaltime = sw.getLastTaskTimeMillis();
         System.out.println("Time to exceute save = "+totaltime);
 // print the time to the console
-
         return retVal;
     }
 }
