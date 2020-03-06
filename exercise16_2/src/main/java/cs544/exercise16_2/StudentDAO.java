@@ -17,9 +17,15 @@ public class StudentDAO {
 		Student student = new Student(11334, "Frank", "Brown");
 		Course course1 = new Course(1101, "Java", "A");
 		Course course2 = new Course(1102, "Math", "B-");
-		student.addCourse(course1);
-		student.addCourse(course2);
-		studentlist.add(student);
+		//student.addCourse(course1);
+		sf.getCurrentSession().persist(course1);
+
+		//student.addCourse(course2);
+		sf.getCurrentSession().persist(course2);
+
+		//studentlist.add(student);
+		sf.getCurrentSession().saveOrUpdate(student);
+
 
 	}
 
