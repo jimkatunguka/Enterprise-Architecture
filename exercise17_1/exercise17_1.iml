@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="Springconfig" removed="false">
           <file>file://$MODULE_DIR$/web/WEB-INF/springconfig.xml</file>
+          <file>file://$MODULE_DIR$/web/springconfig.xml</file>
         </fileset>
       </configuration>
     </facet>

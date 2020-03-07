@@ -8,12 +8,12 @@ public class Account {
 	@Id
 //	@GeneratedValue
 //	private Long id;
-	long accountnumber;
+	private long accountnumber;
 
 	@OneToMany(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
 	@JoinColumn(name = "Account_Id")
+	private Collection<AccountEntry> entryList = new ArrayList<AccountEntry>();
 
-	Collection<AccountEntry> entryList = new ArrayList<AccountEntry>();
 	@OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
 	Customer customer;
 

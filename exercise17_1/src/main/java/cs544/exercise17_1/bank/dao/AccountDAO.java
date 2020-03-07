@@ -2,30 +2,49 @@ package cs544.exercise17_1.bank.dao;
 
 import java.util.*;
 
-import cs544.exercise17_1.bank.domain.Account;
 import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
+
+
+import cs544.exercise17_1.bank.domain.Account;
+
+@Transactional(propagation = Propagation.MANDATORY)
 public class AccountDAO implements IAccountDAO {
-	private SessionFactory sf;
 
-	public void setSessionFactory(SessionFactory sf){
-		this.sf = sf;
+	Collection<Account> accountlist = new ArrayList<Account>();
+
+
+	private SessionFactory sessionFactory;
+
+	public AccountDAO() {
+
+	}
+
+	public void setSessionFactory(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
 	}
 
 	public void saveAccount(Account account) {
-		sf.getCurrentSession().persist(account);
+		sessionFactory.getCurrentSession().persist(account);
 	}
 
 	public void updateAccount(Account account) {
-		sf.getCurrentSession().saveOrUpdate(account);
+
+		sessionFactory.getCurrentSession().saveOrUpdate(account);
 	}
 
 	public Account loadAccount(long accountnumber) {
-		return (Account) sf.getCurrentSession().get(Account.class, accountnumber);
+
+		return (Account) sessionFactory.getCurrentSession().get(Account.class, accountnumber);
 	}
 
-	public Collection<Account> getAccounts() {
-		return sf.getCurrentSession().createQuery("from Account").list();
+	@SuppressWarnings("unchecked")
+	public List<Account> getAccounts() {
+		return sessionFactory.getCurrentSession().createQuery("from Account").list();
 	}
+
 }
