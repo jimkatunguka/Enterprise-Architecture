@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="exercise17_2" />
+        <module name="exercise16_2" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="exercise16_2" target="1.6" />
+      <module name="exercise17_2" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="exercise16_2" options="-endorseddirs C:\Users\jimka\Downloads\cs544-master\cs544-master\exercises\Enterprise-Architecture\exercise16_2\target/endorsed" />
+      <module name="exercise17_2" options="-endorseddirs C:\Users\jimka\Downloads\cs544-master\cs544-master\exercises\Enterprise-Architecture\exercise17_2\target/endorsed" />
+    </option>
+  </component>
+</project>

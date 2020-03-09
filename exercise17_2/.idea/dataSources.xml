@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="src:main:webapp:WEB-INF:hibernate.cfg.xml/Hibernate" uuid="1ffef57c-4643-43f6-8252-792300bc1a14">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/jimka/Downloads/cs544-master/cs544-master/exercises/Enterprise-Architecture/exercise17_2/src/main/webapp/WEB-INF/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost/cs544</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="hibernate.cfg.xml/Hibernate" uuid="3bef0ff6-3b47-4179-8799-52b232242ef4">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>Hibernate
+
+C:/Users/jimka/Downloads/cs544-master/cs544-master/exercises/Enterprise-Architecture/exercise17_2/src/main/resources/hibernate.cfg.xml</remarks>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost/cs544</jdbc-url>
+    </data-source>
+  </component>
+</project>
