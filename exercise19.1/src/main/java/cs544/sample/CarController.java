@@ -17,7 +17,7 @@ public class CarController {
 	@Resource
 	private ICarDao carDao;
 	
-	@RequestMapping("/")
+	//@RequestMapping("/")
 	public String redirectRoot() {
 		return "redirect:/cars";
 	}
