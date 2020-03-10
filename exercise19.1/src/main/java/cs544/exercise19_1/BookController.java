@@ -1,6 +1,5 @@
 package cs544.exercise19_1;
 
-import cs544.sample.NoSuchResourceException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -28,7 +27,7 @@ public class BookController {
     }
 
     @RequestMapping(value="/books", method=RequestMethod.POST)
-    public String add(Book book) {
+    public String add(cs544.exercise19_1.Book book) {
         bookDao.add(book);
         return "redirect:/books";
     }
@@ -39,7 +38,7 @@ public class BookController {
         return "bookDetail";
     }
 
-    @RequestMapping(value="/cars/{id}", method=RequestMethod.POST)
+    @RequestMapping(value="/books/{id}", method=RequestMethod.POST)
     public String update(Book book, @PathVariable int id) {
         bookDao.update(id, book); // book.id already set by binding
         return "redirect:/books";
