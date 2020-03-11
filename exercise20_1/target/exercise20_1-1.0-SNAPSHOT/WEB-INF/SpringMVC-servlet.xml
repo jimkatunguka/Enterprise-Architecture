@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:mvc="http://www.springframework.org/schema/mvc"
+	   xmlns:sec="http://www.springframework.org/schema/security"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util-3.0.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/security
+		http://www.springframework.org/schema/security/spring-security-3.2.xsd">
+
+
+	<mvc:annotation-driven />
+	<context:component-scan base-package="cs544" />
+	<!-- <context:annotation-config /> -->
+	<bean id="carDao" class="cs544.sample.CarDao" />
+	<bean id="bookDao" class="cs544.exercise20_1.BookDao" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources
+		in the /WEB-INF/views directory -->
+	<bean
+			class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+				  value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!-- Forwards requests to the "/addCar" resource to the "addCar" view -->
+	<mvc:view-controller path="/index"
+						 view-name="index" />
+	<mvc:view-controller path="/login"
+						 view-name="login" />
+	<mvc:view-controller path="/addCar"
+						 view-name="addCar" />
+
+	<!-- Lets us find resources (.html etc) through the default servlet -->
+	<mvc:default-servlet-handler />
+
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving
+		up static resources in the ${webappRoot}/resources/ directory -->
+	<mvc:resources mapping="/resources/**"
+				   location="/resources/" />
+
+	<bean id="webexpressionHandler"
+		  class="org.springframework.security.web.access.expression.DefaultWebSecurityExpressionHandler" />
+
+	<!-- <sec:http pattern="/" security="none" /> -->
+	<!-- <sec:http pattern="/resources/**" security="none" /> -->
+
+	<sec:http>
+		<sec:intercept-url pattern="/login"
+						   access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<sec:intercept-url pattern="/loginfailed"
+						   access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		<sec:intercept-url pattern="/**" method="POST"
+						   access="ROLE_ADMIN" />
+		<sec:intercept-url pattern="/addCar" method="GET"
+						   access="ROLE_ADMIN" />
+		<sec:intercept-url pattern="/**" access="ROLE_USER"
+						   method="GET" />
+		<sec:form-login login-page="/login"
+						authentication-failure-url="/loginfailed" default-target-url="/cars" />
+		<sec:logout logout-success-url="/" />
+	</sec:http>
+
+	<sec:authentication-manager>
+		<sec:authentication-provider>
+			<sec:user-service>
+				<sec:user name="user" password="123"
+						  authorities="ROLE_USER" />
+				<sec:user name="admin" password="123"
+						  authorities="ROLE_ADMIN, ROLE_USER" />
+			</sec:user-service>
+		</sec:authentication-provider>
+	</sec:authentication-manager>
+
+</beans>
